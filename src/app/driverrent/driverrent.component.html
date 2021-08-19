@@ -1,0 +1,84 @@
+<div class="onee">
+    <mat-toolbar color="primary">Book a Car</mat-toolbar>
+<div class="first">
+    <h1>Book a Rental Car Exclusively with a driver</h1>
+    <h4>Benefit of renting a car with a driver is You donot need to put up some effort to drive for so long</h4>
+</div>
+<div class="second">
+    <form autocomplete="off" class="form" [formGroup]="myForm">
+        <div class="autocomplete" style="width:300px;">
+            <label for="lcountry">Select your location to rent a car</label><br>
+            <p>Our Car Rental Service is only availble in Andhra Pradesh</p>
+        </div>
+            <div class="form-group">
+        <select id="state" formControlName="state">
+            <option value="state">Andhra Pradesh</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select id="city" formControlName="city">
+            <option value="city">Select a city</option>
+            <option value="city">Vijayawada</option>
+            <option value="city">Guntur</option>
+            <option value="city">Vishakapatnam</option>
+        </select>
+    </div>
+    <div class="form-group" >
+        <p>Pickup Date:</p>
+        <input type="date" name="" required formControlName="pickup">
+    </div>
+    <div class="form-group">
+        <p>Drop Date:</p>
+        <input type="date" name="" required formControlName="drop">
+    </div>
+    <div class="form-group">
+        <p>Pick-Up Time:</p>
+        <input atp-time-picker value=" " required formControlName="pickupt">
+    </div>
+    <div class="form-group">
+        <p>Drop Time:</p>
+        <input atp-time-picker value=" " required formControlName="dropt">
+    </div>
+    <div class="form-group">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" formControlName="firstname"><br>
+    </div>
+    <div class="form-group">
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" formControlName="lastname"><br>
+    </div>
+    <div class="form-group">
+        <label for="lname">Phone number:</label><br>
+        <input type="text" id="lname" name="lname" formControlName="phone"><br><br>
+    </div>
+    <div class="form-group">
+        <label for="lemail">Email ID:</label><br>
+        <input type="text" id="lemail" name="lemail" formControlName="email"><br><br>
+    </div>
+    <div class="form-group">
+        <label for="male">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" formControlName="gender">
+    </div>
+    <div class="form-group">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" formControlName="gender">
+    </div>
+    <div class="form-group">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" formControlName="gender">
+    </div>
+    <div class="form-group">
+        <label for="other">Other</label>
+    </div>
+        <br>
+        <div>
+        <button (click)="Bookings()">Submit
+            </button>
+    </div>
+    <div>
+        <input type="reset" value="Reset">
+    </div>
+      </form>      
+      <br>
+</div>
+</div>
